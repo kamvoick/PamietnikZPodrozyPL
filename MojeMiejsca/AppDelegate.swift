@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  MojeMiejsca
 //
-//  Created by Kamil Wójcik on 05.07.2016.
+//  Created by Kamil Wójcik on 29.06.2016.
 //  Copyright © 2016 Kamil Wójcik. All rights reserved.
 //
 

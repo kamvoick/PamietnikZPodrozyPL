@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="Dzwiek" representedClassName=".Dzwiek" syncable="YES">
+        <attribute name="nazwaDzwieku" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nazwaMiejsca" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlDzwieku" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MojeMiejsca" representedClassName=".MojeMiejsca" syncable="YES">
+        <attribute name="latitudeMiejsca" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitudeMiejsca" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="nazwaMiejsca" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opisMiejsca" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pokazMiejsce" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="typMiejsca" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Ustawienia" representedClassName=".Ustawienia" syncable="YES">
+        <attribute name="pokazNoweMiejsca" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="pokazStareMiejsca" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="Video" representedClassName=".Video" syncable="YES">
+        <attribute name="nazwaMiejsca" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlVideo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Zdjecia" representedClassName=".Zdjecia" syncable="YES">
+        <attribute name="nazwaMiejsca" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zdjecieMiejsca" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MojeMiejsca" positionX="-54" positionY="0" width="128" height="135"/>
+        <element name="Zdjecia" positionX="-36" positionY="63" width="128" height="75"/>
+        <element name="Dzwiek" positionX="-18" positionY="72" width="128" height="90"/>
+        <element name="Video" positionX="0" positionY="99" width="128" height="75"/>
+        <element name="Ustawienia" positionX="18" positionY="108" width="128" height="75"/>
+    </elements>
 </model>

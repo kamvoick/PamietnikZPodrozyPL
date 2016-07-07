@@ -8,22 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		42E67F071D2BA35F00920669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F061D2BA35F00920669 /* AppDelegate.swift */; };
-		42E67F091D2BA35F00920669 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F081D2BA35F00920669 /* ViewController.swift */; };
 		42E67F0C1D2BA35F00920669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42E67F0A1D2BA35F00920669 /* Main.storyboard */; };
 		42E67F0F1D2BA35F00920669 /* MojeMiejsca.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F0D1D2BA35F00920669 /* MojeMiejsca.xcdatamodeld */; };
 		42E67F111D2BA35F00920669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E67F101D2BA35F00920669 /* Assets.xcassets */; };
 		42E67F141D2BA35F00920669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42E67F121D2BA35F00920669 /* LaunchScreen.storyboard */; };
+		42E67F1E1D2BA35F00920669 /* GdzieJestemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F1D1D2BA35F00920669 /* GdzieJestemVC.swift */; };
+		42E67F201D2BA35F00920669 /* UstawieniaTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F1F1D2BA35F00920669 /* UstawieniaTVC.swift */; };
+		42E67F221D2BA35F00920669 /* MojeMiejscaTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F211D2BA35F00920669 /* MojeMiejscaTVC.swift */; };
+		42E67F2F1D2D245600920669 /* MojeMiejsca+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F251D2D245600920669 /* MojeMiejsca+CoreDataProperties.swift */; };
+		42E67F301D2D245600920669 /* MojeMiejsca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F261D2D245600920669 /* MojeMiejsca.swift */; };
+		42E67F311D2D245600920669 /* Ustawienia+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F271D2D245600920669 /* Ustawienia+CoreDataProperties.swift */; };
+		42E67F321D2D245600920669 /* Ustawienia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F281D2D245600920669 /* Ustawienia.swift */; };
+		42E67F331D2D245600920669 /* Zdjecia+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F291D2D245600920669 /* Zdjecia+CoreDataProperties.swift */; };
+		42E67F341D2D245600920669 /* Zdjecia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F2A1D2D245600920669 /* Zdjecia.swift */; };
+		42E67F351D2D245600920669 /* Dzwiek+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F2B1D2D245600920669 /* Dzwiek+CoreDataProperties.swift */; };
+		42E67F361D2D245600920669 /* Dzwiek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F2C1D2D245600920669 /* Dzwiek.swift */; };
+		42E67F371D2D245600920669 /* Video+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F2D1D2D245600920669 /* Video+CoreDataProperties.swift */; };
+		42E67F381D2D245600920669 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F2E1D2D245600920669 /* Video.swift */; };
+		42E67F3A1D2D2D1D00920669 /* DodajMiejsceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E67F391D2D2D1D00920669 /* DodajMiejsceVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		42E67F031D2BA35F00920669 /* MojeMiejsca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MojeMiejsca.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E67F061D2BA35F00920669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		42E67F081D2BA35F00920669 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		42E67F0B1D2BA35F00920669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42E67F0E1D2BA35F00920669 /* MojeMiejsca.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MojeMiejsca.xcdatamodel; sourceTree = "<group>"; };
 		42E67F101D2BA35F00920669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42E67F131D2BA35F00920669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42E67F151D2BA35F00920669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42E67F1D1D2BA35F00920669 /* GdzieJestemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GdzieJestemVC.swift; sourceTree = "<group>"; };
+		42E67F1F1D2BA35F00920669 /* UstawieniaTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UstawieniaTVC.swift; sourceTree = "<group>"; };
+		42E67F211D2BA35F00920669 /* MojeMiejscaTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MojeMiejscaTVC.swift; sourceTree = "<group>"; };
+		42E67F251D2D245600920669 /* MojeMiejsca+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MojeMiejsca+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		42E67F261D2D245600920669 /* MojeMiejsca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MojeMiejsca.swift; sourceTree = "<group>"; };
+		42E67F271D2D245600920669 /* Ustawienia+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ustawienia+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		42E67F281D2D245600920669 /* Ustawienia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ustawienia.swift; sourceTree = "<group>"; };
+		42E67F291D2D245600920669 /* Zdjecia+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Zdjecia+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		42E67F2A1D2D245600920669 /* Zdjecia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zdjecia.swift; sourceTree = "<group>"; };
+		42E67F2B1D2D245600920669 /* Dzwiek+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dzwiek+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		42E67F2C1D2D245600920669 /* Dzwiek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dzwiek.swift; sourceTree = "<group>"; };
+		42E67F2D1D2D245600920669 /* Video+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Video+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		42E67F2E1D2D245600920669 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		42E67F391D2D2D1D00920669 /* DodajMiejsceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DodajMiejsceVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +66,16 @@
 		42E67EFA1D2BA35F00920669 = {
 			isa = PBXGroup;
 			children = (
+				42E67F251D2D245600920669 /* MojeMiejsca+CoreDataProperties.swift */,
+				42E67F261D2D245600920669 /* MojeMiejsca.swift */,
+				42E67F271D2D245600920669 /* Ustawienia+CoreDataProperties.swift */,
+				42E67F281D2D245600920669 /* Ustawienia.swift */,
+				42E67F291D2D245600920669 /* Zdjecia+CoreDataProperties.swift */,
+				42E67F2A1D2D245600920669 /* Zdjecia.swift */,
+				42E67F2B1D2D245600920669 /* Dzwiek+CoreDataProperties.swift */,
+				42E67F2C1D2D245600920669 /* Dzwiek.swift */,
+				42E67F2D1D2D245600920669 /* Video+CoreDataProperties.swift */,
+				42E67F2E1D2D245600920669 /* Video.swift */,
 				42E67F051D2BA35F00920669 /* MojeMiejsca */,
 				42E67F041D2BA35F00920669 /* Products */,
 			);
@@ -57,12 +93,15 @@
 			isa = PBXGroup;
 			children = (
 				42E67F061D2BA35F00920669 /* AppDelegate.swift */,
-				42E67F081D2BA35F00920669 /* ViewController.swift */,
 				42E67F0A1D2BA35F00920669 /* Main.storyboard */,
 				42E67F101D2BA35F00920669 /* Assets.xcassets */,
 				42E67F121D2BA35F00920669 /* LaunchScreen.storyboard */,
 				42E67F151D2BA35F00920669 /* Info.plist */,
 				42E67F0D1D2BA35F00920669 /* MojeMiejsca.xcdatamodeld */,
+				42E67F1D1D2BA35F00920669 /* GdzieJestemVC.swift */,
+				42E67F1F1D2BA35F00920669 /* UstawieniaTVC.swift */,
+				42E67F211D2BA35F00920669 /* MojeMiejscaTVC.swift */,
+				42E67F391D2D2D1D00920669 /* DodajMiejsceVC.swift */,
 			);
 			path = MojeMiejsca;
 			sourceTree = "<group>";
@@ -139,9 +178,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42E67F091D2BA35F00920669 /* ViewController.swift in Sources */,
+				42E67F301D2D245600920669 /* MojeMiejsca.swift in Sources */,
+				42E67F371D2D245600920669 /* Video+CoreDataProperties.swift in Sources */,
 				42E67F071D2BA35F00920669 /* AppDelegate.swift in Sources */,
+				42E67F2F1D2D245600920669 /* MojeMiejsca+CoreDataProperties.swift in Sources */,
+				42E67F381D2D245600920669 /* Video.swift in Sources */,
+				42E67F351D2D245600920669 /* Dzwiek+CoreDataProperties.swift in Sources */,
+				42E67F311D2D245600920669 /* Ustawienia+CoreDataProperties.swift in Sources */,
+				42E67F1E1D2BA35F00920669 /* GdzieJestemVC.swift in Sources */,
+				42E67F201D2BA35F00920669 /* UstawieniaTVC.swift in Sources */,
 				42E67F0F1D2BA35F00920669 /* MojeMiejsca.xcdatamodeld in Sources */,
+				42E67F3A1D2D2D1D00920669 /* DodajMiejsceVC.swift in Sources */,
+				42E67F341D2D245600920669 /* Zdjecia.swift in Sources */,
+				42E67F361D2D245600920669 /* Dzwiek.swift in Sources */,
+				42E67F221D2BA35F00920669 /* MojeMiejscaTVC.swift in Sources */,
+				42E67F331D2D245600920669 /* Zdjecia+CoreDataProperties.swift in Sources */,
+				42E67F321D2D245600920669 /* Ustawienia.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +343,7 @@
 				42E67F1A1D2BA35F00920669 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
