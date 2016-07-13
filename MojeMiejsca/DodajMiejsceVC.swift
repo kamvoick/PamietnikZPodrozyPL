@@ -24,13 +24,40 @@ class DodajMiejsceVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let saveRightBarButton = UIBarButtonSystemItem.Save
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: saveRightBarButton, target: self, action: Selector("dodajAkcjePoNaciśnięciuSave:"))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Zapisz", style: .Plain , target: self, action: #selector(DodajMiejsceVC.dodajAkcjePoNaciśnięciuSave(_:)))
     }
 
     @IBAction func dodajAkcjePoNaciśnięciuSave(sender: AnyObject){
         nazwaMiejsca = wpiszMiejsceTextField.text!
+        latitudeMiejsca = Double(wpiszLatitudeTextField.text!) ?? 0.0
+        longitudeMiejsca = Double(wpiszLongitudeTextField.text!) ?? 0.0
+        opisMiejsca = opisMiejscaTextView.text!
+        
+        //Core Data
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let context = appDelegate.managedObjectContext
+        
+        let noweMiejsce = NSEntityDescription.insertNewObjectForEntityForName("MojeMiejsca", inManagedObjectContext: context) as! MojeMiejsca
+        
+        noweMiejsce.nazwaMiejsca = nazwaMiejsca
+        noweMiejsce.latitudeMiejsca = latitudeMiejsca
+        noweMiejsce.longitudeMiejsca = longitudeMiejsca
+        noweMiejsce.opisMiejsca = opisMiejsca
+        noweMiejsce.typMiejsca = "Moje"
+        noweMiejsce.pokazMiejsce = true
+        
+        do{
+            try context.save()
+            zapisanoMiejsceLabel.hidden = false
+            zapisanoMiejsceLabel.text = "Zapisano: \(nazwaMiejsca)"
+        }catch{
+            zapisanoMiejsceLabel.text = "Błąd: \(error)"
+            "jakiś błąd \(error)"
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {

@@ -69,6 +69,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="vOr-hL-cJY" kind="show" id="x1c-vv-8tf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -88,6 +91,24 @@
             </objects>
             <point key="canvasLocation" x="2174" y="1318"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="seJ-ki-eXM">
+            <objects>
+                <viewController id="vOr-hL-cJY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aWS-sM-xaI"/>
+                        <viewControllerLayoutGuide type="bottom" id="0H9-Py-2vi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IIx-0h-f5E">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Pv-H6-4d6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2555" y="2118"/>
+        </scene>
         <!--Dodaj miejsce-->
         <scene sceneID="s2S-y2-s2A">
             <objects>
@@ -101,21 +122,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lO9-Xe-ANT">
-                                <rect key="frame" x="20" y="72" width="560" height="265"/>
+                                <rect key="frame" x="20" y="72" width="560" height="270"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zapisano miejsce!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZM-Ym-LOA">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="16"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Zapisano miejsce!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZM-Ym-LOA">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.22081333096524389" green="0.75426564861025647" blue="0.12703350713022271" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Wpisz nazwę miejsca..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JTX-Km-ASE">
-                                        <rect key="frame" x="0.0" y="26" width="560" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Wpisz nazwę miejsca..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JTX-Km-ASE">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="61"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dkm-wD-tSY">
-                                        <rect key="frame" x="0.0" y="66" width="560" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dkm-wD-tSY">
+                                        <rect key="frame" x="0.0" y="71" width="560" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Współrzędne geograficzne:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cw4-4m-32f">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="30"/>
@@ -135,8 +156,8 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Evc-gW-oC9">
-                                        <rect key="frame" x="0.0" y="106" width="560" height="159"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Evc-gW-oC9">
+                                        <rect key="frame" x="0.0" y="111" width="560" height="159"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -175,6 +196,8 @@
                             <constraint firstItem="1ai-wE-HS7" firstAttribute="top" secondItem="lO9-Xe-ANT" secondAttribute="bottom" constant="214" id="sfp-Wu-pi4"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="opisMiejscaTextView" destination="Evc-gW-oC9" id="JU5-9H-cUt"/>
                         <outlet property="wpiszLatitudeTextField" destination="jka-HR-Hwe" id="xbF-GV-e3L"/>

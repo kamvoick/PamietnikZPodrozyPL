@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
 class MojeMiejscaTVC: UITableViewController {
     
-    var mojeMiejsca = ["Egipt", "Turcja", "Madagaskar"]
+    var mojeMiejsca = [MojeMiejsca]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,31 @@ class MojeMiejscaTVC: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let context = appDelegate.managedObjectContext
+        
+        let fetchReq = NSFetchRequest(entityName: "MojeMiejsca")
+        
+        fetchReq.predicate = NSPredicate(format: "pokazMiejsce = %@", true)
+        
+        let sortDescriptor = NSSortDescriptor(key: "nazwaMiejsca", ascending: true)
+        
+        fetchReq.sortDescriptors = [sortDescriptor]
+        
+        do{
+            if let miejscaFetchedResults = try context.executeFetchRequest(fetchReq) as? [MojeMiejsca]{
+            mojeMiejsca = miejscaFetchedResults
+            }
+        }catch{
+            fatalError("Błąd")
+        }
+        
+        self.tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,7 +70,8 @@ class MojeMiejscaTVC: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
         
-        cell.textLabel?.text = "Test"
+        let miejsce = mojeMiejsca[indexPath.row]
+        cell.textLabel?.text = miejsce.nazwaMiejsca
         
         return cell
     }
